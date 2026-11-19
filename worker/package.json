@@ -18,6 +18,6 @@
   "author": "Guts",
   "license": "MIT",
   "devDependencies": {
-    "wrangler": "^3.80.0"
+    "wrangler": "^4.163.0"
   }
 }
