@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./docs/assets/antigravity-banner.jpg" width="100%" alt="Concept illustration of a floating AI core and branching network" />
+<img src="./docs/assets/pol-community-cover.png" width="100%" alt="Cosmic illustration of Antigravity, Meta, Gemini and Cloudflare" />
 
 # 🌌 Pol Cloudflare Bridge
 

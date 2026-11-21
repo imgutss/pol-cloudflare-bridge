@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./docs/assets/antigravity-banner.jpg" width="100%" alt="نمای مفهومی شبکهٔ شاخه‌ای و هستهٔ معلق هوش مصنوعی" />
+<img src="./docs/assets/pol-community-cover.png" width="100%" alt="تصویر فضایی آنتی‌گرویتی، متا، جمنای و کلودفلر" />
 
 # 🌌 Pol Cloudflare Bridge
 
