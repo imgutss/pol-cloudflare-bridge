@@ -1,64 +1,197 @@
 <div align="center">
 
-# 🌉 پل کلودفلر · Pol Cloudflare Bridge
-### کلاینت اندروید و پل Cloudflare برای سرویس‌های هوش مصنوعی
-**مرورگر داخلی · مدل آفلاین متنی · رابط سه‌بعدی**
+<img src="./docs/assets/antigravity-banner.jpg" width="100%" alt="نمای مفهومی شبکهٔ شاخه‌ای و هستهٔ معلق هوش مصنوعی" />
+
+# 🌌 Pol Cloudflare Bridge
+
+### آنتی‌گرویتی، مدل‌های آفلاین و پل ابری؛ کنار هم، روی اندروید
+
+**یک داشبورد · چند مسیر هوش مصنوعی · انتخاب با تو**
 
 <br/>
 
-<a href="https://github.com/imgutss/pol-cloudflare-bridge/releases/download/v1.0.1/Pol-Cloudflare-Bridge.apk">
-  <img src="https://img.shields.io/badge/دانلود%20مستقیم%20APK-نسخه%20v1.0.1-FF8A2A?style=for-the-badge&logo=android&logoColor=white" alt="دانلود APK" />
-</a>
-<a href="./README.md"><img src="https://img.shields.io/badge/English-Docs-2563EB?style=for-the-badge" alt="English Documentation" /></a>
-<a href="https://github.com/imgutss/pol-cloudflare-bridge/stargazers"><img src="https://img.shields.io/badge/⭐%20Star-Support%20Project-F59E0B?style=for-the-badge" alt="Stars" /></a>
+<a href="https://github.com/imgutss/pol-cloudflare-bridge/releases/download/v1.0.1/Pol-Cloudflare-Bridge.apk"><img src="https://img.shields.io/badge/⬇_دانلود_APK-v1.0.1-8B5CF6?style=for-the-badge&logo=android&logoColor=white" alt="دانلود نسخه 1.0.1" /></a>
+<a href="./README.md"><img src="https://img.shields.io/badge/English-Documentation-06B6D4?style=for-the-badge" alt="English documentation" /></a>
+<a href="https://github.com/imgutss/pol-cloudflare-bridge/stargazers"><img src="https://img.shields.io/badge/⭐_Star-حمایت_از_پروژه-F59E0B?style=for-the-badge" alt="ستاره دادن به پروژه" /></a>
 
 <br/><br/>
-<img src="https://img.shields.io/badge/Android-8%2B-3DDC84?style=flat-square&logo=android&logoColor=white" />
-<img src="https://img.shields.io/badge/Cloudflare-Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white" />
-<img src="https://img.shields.io/badge/Offline-ARM64%20CPU-8B5CF6?style=flat-square" />
+
+<img src="https://img.shields.io/badge/Android-8%2B-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android 8+" />
+<img src="https://img.shields.io/badge/Antigravity-Mobile%20Experience-A78BFA?style=flat-square" alt="Antigravity mobile experience" />
+<img src="https://img.shields.io/badge/Offline-ARM64%20%7C%20CPU-22D3EE?style=flat-square" alt="Offline ARM64 CPU" />
+<img src="https://img.shields.io/badge/Bridge-Cloudflare%20Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare Workers" />
+
+<br/>
+
+[🚀 شروع سریع](#quick-start) · [🪐 آنتی‌گرویتی](#antigravity) · [🌳 معماری](#architecture) · [🧠 آفلاین](#offline) · [📦 دانلود](#download)
 
 </div>
 
 ---
 
-<div dir="rtl">
+## ✨ یک نگاه، چهار دنیا
 
-## 🌟 معرفی
-
-پل کلودفلر یک اپ اندرویدی با مرورگر داخلی، اتصال به سرویس‌های هوش مصنوعی و امکان گفت‌وگوی متنی با مدل‌های آفلاین است. مسیر مرورگر داخلی از طریق پروکسی محلی و ورکر کلودفلر برقرار می‌شود؛ آدرس ورکر و کلید پل قابل تنظیم هستند.
-
-| قابلیت | توضیح |
-| :--- | :--- |
-| 🌐 **مرورگر داخلی** | باز کردن سرویس‌هایی مانند Gemini و Muse از داخل برنامه. |
-| 🔧 **تنظیم دستی API** | ورود دستی آدرس، نام مدل و کلید API؛ انتخاب خودکار مدل انجام نمی‌شود. |
-| 🤖 **مدل آفلاین متنی** | دریافت و اجرای مدل سازگار روی CPU دستگاه؛ مدل‌ها جداگانه دانلود می‌شوند. |
-| 💬 **پاسخ تدریجی** | نمایش مرحله‌ای پاسخ آفلاین، نگه‌داشتن مدل بارگذاری‌شده بین پیام‌ها و نمایش Markdown. |
-| 🗂️ **مدیریت مدل‌ها** | کارت‌های افقی و گزینهٔ حذف مدل آفلاین. |
-| ⌨️ **کیبورد Gemini** | اصلاح مدیریت فضای کیبورد در مرورگر داخلی. |
-
-## 🚀 دانلود و نصب
-
-| نسخه | حجم APK | پیش‌نیاز | دانلود |
+| 🪐 Antigravity | 🌐 Gemini و Muse | 🧠 آفلاین | ☁️ پل Cloudflare |
 | :---: | :---: | :---: | :---: |
-| **v1.0.1** | حدود ۱۶۸ مگابایت | اندروید ۸ یا بالاتر؛ مدل آفلاین به ARM64 نیاز دارد | [📥 دانلود مستقیم APK](https://github.com/imgutss/pol-cloudflare-bridge/releases/download/v1.0.1/Pol-Cloudflare-Bridge.apk) |
+| محیط و موتور روی گوشی | مرورگر داخلی سرویس‌ها | مدل متنی روی CPU | اتصال قابل تنظیم |
+| انتخاب مدل و گفت‌وگو در محیط | اصلاح کیبورد Gemini | پاسخ تدریجی و Markdown | بدون سرور جداگانه |
 
-مدل‌های آفلاین داخل APK نیستند و به فضای ذخیره‌سازی و حافظهٔ کافی نیاز دارند. قبل از نصب، از داده‌های مهم پشتیبان بگیرید. اگر نسخهٔ قبلی با امضای متفاوت نصب شده باشد، اندروید ممکن است به‌روزرسانی مستقیم را نپذیرد؛ حذف برنامه می‌تواند داده‌های آن را پاک کند.
-
-## ☁️ تنظیم اتصال
-
-ورکر را با راهنمای پوشهٔ [`worker/`](./worker/) روی حساب Cloudflare خود مستقر کنید و آدرس و کلید آن را در تنظیمات برنامه وارد کنید. برای سرویس سفارشی، نشانی API، نام مدل و کلید همان سرویس را به‌صورت دستی وارد کنید.
-
-> کشور یا IP خروجی Cloudflare ثابت و تضمین‌شده نیست و دسترسی به هر سرویس به شرایط آن سرویس و شبکه بستگی دارد. همهٔ مسیرهای برنامه یا تمام ارائه‌دهندگان برای عبور از تونل به‌صورت جامع تأیید نشده‌اند؛ برای adapter سفارشی، در نبود پل اتصال مستقیم جایگزین نمی‌شود.
-
-## ℹ️ محدودیت‌های نسخه
-
-- در این انتشار پردازش تصویر و دوربین آفلاین و شتاب‌دهی GPU وجود ندارد؛ گفت‌وگوی آفلاین متنی از CPU استفاده می‌کند.
-- سازگاری، سرعت و مصرف حافظه به مدل و دستگاه بستگی دارد. کیبورد Gemini توسط کاربر روی دستگاه آزمایش شده، اما همهٔ دستگاه‌ها و نسخه‌های WebView آزمایش نشده‌اند.
-- محتوای مخزن شامل کد و منابع نسخه‌های قبلی و قطعات تغییرات این نسخه است؛ **سورس کامل و فرایند بازتولید مستقل APK منتشرشده فعلاً در مخزن موجود نیست**.
-
-📋 [تاریخچه تغییرات](./CHANGELOG.md) · 📦 [همهٔ انتشارها](https://github.com/imgutss/pol-cloudflare-bridge/releases) · 🔒 [امنیت](./SECURITY.md)
-
-</div>
+> **Pol یک کلاینت مستقل است، نه محصول رسمی Google یا Cloudflare.** دسترسی و قابلیت‌های هر سرویس به حساب، مدل، مجوزها و شرایط سرویس وابسته‌اند.
 
 ---
-<div align="center"><b>توسعه‌داده‌شده توسط <a href="https://github.com/imgutss">Guts (imgutss)</a></b></div>
+
+<a id="antigravity"></a>
+
+## 🪐 آنتی‌گرویتی — قلب تجربه
+
+آنتی‌گرویتی فقط یک لینک روی داشبورد نیست؛ در Pol یک **محیط و موتور محلی روی گوشی** باز می‌شود تا بتوانی در همان محیط، حساب و مدل را انتخاب کنی و گفت‌وگو را ادامه بدهی. بخش آنلاین و آفلاین برنامه مسیرهای مستقل خودشان را دارند.
+
+| 🎛️ مرکز کنترل مدل | 🔌 مدل API سفارشی |
+| :--- | :--- |
+| ورود به حساب Google در صورت نیاز | تنظیم دستی **URL، نام مدل و API Key** |
+| انتخاب مدل کنار کادر گفت‌وگو | مسیر API سفارشی OpenAI-compatible |
+| رابط فارسی / English در محیط | اتصال به پل موجود برای این مسیر |
+| ابزارهای موجود وابسته به حساب و سرویس | بعد از تغییر تنظیمات، یک گفت‌وگوی جدید بساز |
+
+**مهم:** اتصال مدل سفارشی آزمایشی و برای یک مدل متنی است و به معنی سازگاری همهٔ ارائه‌دهندگان یا همهٔ مدل‌ها نیست. ابزارها، تصویر، صدا و فراخوانی ابزار با هر API تضمین نشده‌اند. هنگام استفاده از فایل یا ترمینال، فقط مجوزهای مورد اعتماد را تأیید کن. ورود و بعضی مسیرهای بومی ممکن است رفتار شبکهٔ متفاوتی داشته باشند.
+
+<details>
+<summary><b>🚀 ورود به Antigravity در سه قدم</b></summary>
+
+1. در صفحهٔ اصلی، کارت **Antigravity** و سپس «باز کردن» را بزن.
+2. در اولین اجرا، برای آماده‌شدن فایل‌های موتور صبر کن و اگر درخواست شد وارد حساب Google شو.
+3. از کنار کادر پیام، مدل موجود در حسابت را انتخاب کن. برای API سفارشی، ابتدا تنظیمات URL، نام مدل و کلید را وارد کن و گفت‌وگوی جدید بساز.
+
+</details>
+
+---
+
+<a id="architecture"></a>
+
+## 🌳 معماری شاخه‌ای
+
+چهار مسیر اصلی از یک داشبورد شروع می‌شوند، اما همهٔ آن‌ها یک مسیر شبکهٔ یکسان ندارند:
+
+```mermaid
+flowchart TD
+    App["📱 POL · Android Dashboard"]
+    App --> AG["🪐 ANTIGRAVITY"]
+    App --> Web["🌐 IN-APP BROWSER"]
+    App --> Off["🧠 OFFLINE CHAT"]
+    App --> Settings["⚙️ MANUAL SETTINGS"]
+
+    AG --> Runtime["Local engine + interface"]
+    Runtime --> Google["Google service / account"]
+    Runtime --> Adapter["Custom API adapter · experimental"]
+    Settings --> Adapter
+    Web --> Proxy["Local CONNECT proxy"]
+    Adapter --> Proxy
+    Proxy --> WSS["WSS tunnel"]
+    WSS --> Worker["☁️ Cloudflare Worker"]
+    Worker --> Services["Supported HTTPS destinations"]
+
+    Off --> Models["Downloaded GGUF model"]
+    Models --> CPU["ARM64 CPU inference"]
+    CPU --> Stream["Incremental text + Markdown"]
+
+    classDef root fill:#18132f,stroke:#a78bfa,color:#fff,stroke-width:2px;
+    classDef ag fill:#251943,stroke:#c084fc,color:#fff;
+    classDef net fill:#102c38,stroke:#22d3ee,color:#fff;
+    classDef off fill:#142d29,stroke:#34d399,color:#fff;
+    classDef cloud fill:#402515,stroke:#fb923c,color:#fff;
+    class App root;
+    class AG,Runtime,Google,Adapter ag;
+    class Web,Settings,Proxy,WSS,Services net;
+    class Off,Models,CPU,Stream off;
+    class Worker cloud;
+```
+
+<sub>این نمودار مسیرهای اصلی را ساده‌سازی می‌کند: تمام مسیرهای بومی یا ارائه‌دهندگان از نظر عبور از تونل تأیید نشده‌اند. مسیر Google بسته به تنظیمات می‌تواند متفاوت باشد. اتصال مستقیم برای adapter سفارشی در صورت نبود پل جایگزین نمی‌شود.</sub>
+
+### 🔀 نقشهٔ شاخه‌ها در یک نگاه
+
+```text
+Pol
+├── 🪐 Antigravity
+│   ├── موتور و رابط روی گوشی
+│   ├── حساب Google و مدل‌های قابل‌دسترسی حساب
+│   └── API سفارشی آزمایشی → پل محلی → Cloudflare → سرویس
+├── 🌐 مرورگر داخلی → پل محلی → Cloudflare → مقصد
+├── 🧠 گفت‌وگوی آفلاین → مدل دانلودشده → CPU گوشی
+└── ⚙️ تنظیمات دستی → URL + نام مدل + کلید API
+```
+
+---
+
+<a id="offline"></a>
+
+## 🧠 هوش مصنوعی آفلاین
+
+بدون نیاز به اینترنت در زمان گفت‌وگو، پس از دانلود مدل سازگار:
+
+| قابلیت | تجربه در v1.0.1 |
+| :--- | :--- |
+| 📦 **مدل‌ها** | دانلود جداگانه، کارت‌های افقی و امکان حذف مدل |
+| 💬 **پاسخ زنده** | نمایش تدریجی متن به جای انتظار برای پاسخ کامل |
+| ⚡ **نگه‌داشت مدل** | مدل بارگذاری‌شده بین پیام‌ها در حافظه نگه داشته می‌شود |
+| 📝 **Markdown** | نمایش قالب‌بندی متن، فهرست‌ها و کد |
+| 🖥️ **اجرا** | پردازش متنی روی CPU دستگاه ARM64 |
+
+مدل‌ها داخل APK نیستند؛ حجم فایل، حافظهٔ لازم و سرعت اجرا به مدل و دستگاه بستگی دارند. **عکس و دوربین آفلاین و شتاب GPU در این نسخه وجود ندارند.**
+
+---
+
+## ⌨️ Gemini و تجربهٔ آنلاین
+
+- باز کردن Gemini و Muse در مرورگر داخلی برنامه.
+- اصلاح مدیریت فضای کیبورد Gemini؛ نسخهٔ جدید توسط کاربر روی دستگاه بررسی شده است.
+- ورود دستی مشخصات سرویس سفارشی به‌جای کشف یا انتخاب خودکار مدل.
+- امکان استفاده از ورکر Cloudflare موجود در تنظیمات برنامه.
+
+دسترسی به سرویس‌ها، امکانات حساب، سرعت و محدودیت‌های منطقه‌ای به شرایط سرویس و شبکه وابسته‌اند؛ **خروجی ثابت آمریکا یا کشور مشخص تضمین نمی‌شود.**
+
+---
+
+<a id="quick-start"></a>
+
+## 🚀 شروع سریع
+
+**۱. نصب** — [APK نسخهٔ 1.0.1](https://github.com/imgutss/pol-cloudflare-bridge/releases/download/v1.0.1/Pol-Cloudflare-Bridge.apk) را دانلود و نصب کن.
+
+**۲. انتخاب مسیر** — برای Antigravity کارت آن را باز کن؛ برای گفت‌وگوی محلی به بخش آفلاین برو و مدل مورد نظرت را دانلود کن.
+
+**۳. تنظیم پل** — اگر از Cloudflare Worker خودت استفاده می‌کنی، آدرس و کلید پل را در تنظیمات وارد کن. دستورها و فایل‌های ورکر در [`worker/`](./worker/) قرار دارند.
+
+**۴. اتصال API سفارشی** — در تنظیمات Antigravity، آدرس سرویس، نام مدل و کلید API را دستی وارد کن؛ بعد گفت‌وگوی جدید بساز.
+
+<a id="download"></a>
+
+## 📦 دانلود و نصب
+
+| نسخه | حجم | پیش‌نیاز | دریافت |
+| :---: | :---: | :---: | :---: |
+| **v1.0.1** | حدود **۱۶۸ مگابایت** | Android 8+؛ آفلاین: ARM64 و حافظهٔ کافی | [⬇️ دانلود APK](https://github.com/imgutss/pol-cloudflare-bridge/releases/download/v1.0.1/Pol-Cloudflare-Bridge.apk) |
+
+> پیش از نصب از داده‌های مهم پشتیبان بگیر. اگر نسخهٔ نصب‌شده امضای متفاوتی داشته باشد، نصب روی نسخهٔ قبلی ممکن است پذیرفته نشود؛ حذف برنامه می‌تواند داده‌های آن را پاک کند.
+
+<details>
+<summary><b>🔍 جزئیات فایل و وضعیت سورس</b></summary>
+
+- SHA-256: `4416f0fae025d471936bef2a639485040f1ce67d6ef5deb4cf294cfce36e86fe`
+- کیبورد Gemini در یک دستگاه توسط کاربر تأیید شده؛ همهٔ دستگاه‌ها و نسخه‌های WebView آزمایش نشده‌اند.
+- مخزن شامل منابع نسخه‌های قبلی و [قطعات منتخب تغییرات](./android/patches/v1.0.1/) است؛ **سورس کامل و فرایند بازتولید مستقل APK فعلاً موجود نیست**.
+- اجزای همراه و مدل‌های جداگانه ممکن است شرایط مجوز خودشان را داشته باشند.
+
+</details>
+
+---
+
+<div align="center">
+
+### 🌌 یک پل برای کشف مسیرهای بیشتر
+
+[📦 انتشارها](https://github.com/imgutss/pol-cloudflare-bridge/releases) · [📋 تاریخچه تغییرات](./CHANGELOG.md) · [🔒 امنیت](./SECURITY.md) · [🤝 مشارکت](./CONTRIBUTING.md)
+
+**ساخته‌شده توسط [Guts · imgutss](https://github.com/imgutss)**
+
+</div>
