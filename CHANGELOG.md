@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.1] - 2026-11-20
+
+### 🚀 Added
+- **Offline text chat:** ARM64 CPU inference with separately downloaded compatible models, progressive output and loaded-model retention between messages.
+- **Model management:** Horizontal model cards, deletion controls, and Markdown rendering.
+- **Manual API settings:** Enter the service URL, model name and API key manually.
+- **Gemini integration:** In-app browser entry with updated keyboard inset handling.
+
+### 🛡️ Fixed
+- Addressed the Gemini keyboard closing immediately in the in-app browser. The user confirmed the new build on a device; broader device testing is pending.
+- Reverted the experimental offline image/GPU changes after reports of offline crashes; this release is text-only for offline inference.
+
+### ℹ️ Notes
+- Cloudflare egress country/IP is not guaranteed. Not every provider or app path has been verified to use the tunnel.
+- Offline photos, camera and GPU acceleration are not included. Models are downloaded separately.
+- The current repository contains selected patch sources, not a full reproducible source tree for the release APK.
+- Older release notes below are historical; their claims of guaranteed US egress are not a guarantee for this release.
+
+---
+
 ## [1.0.0] - 2026-11-19
 
 ### 🚀 Added

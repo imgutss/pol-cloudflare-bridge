@@ -1,29 +1,21 @@
 <div align="center">
 
 # 🌉 پل کلودفلر · Pol Cloudflare Bridge
-### تونل امن و پرسرعت WebSocket با خروجی آمریکا برای دسترسی به Meta Muse AI
-**کلاینت اختصاصی اندروید · پردازش لبه‌ای کلودفلر · رابط کاربری سه‌بعدی**
+### کلاینت اندروید و پل Cloudflare برای سرویس‌های هوش مصنوعی
+**مرورگر داخلی · مدل آفلاین متنی · رابط سه‌بعدی**
 
 <br/>
 
-<a href="https://github.com/imgutss/pol-cloudflare-bridge/releases/download/v1.0.0/Pol-Cloudflare-Bridge.apk">
-  <img src="https://img.shields.io/badge/دانلود%20مستقیم%20APK-نسخه%20v1.0.0-FF8A2A?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" />
+<a href="https://github.com/imgutss/pol-cloudflare-bridge/releases/download/v1.0.1/Pol-Cloudflare-Bridge.apk">
+  <img src="https://img.shields.io/badge/دانلود%20مستقیم%20APK-نسخه%20v1.0.1-FF8A2A?style=for-the-badge&logo=android&logoColor=white" alt="دانلود APK" />
 </a>
-<a href="./README.md">
-  <img src="https://img.shields.io/badge/🇬🇧%20English%20Docs-Switch%20to%20English-2563EB?style=for-the-badge" alt="English Documentation" />
-</a>
-<a href="https://github.com/imgutss/pol-cloudflare-bridge/stargazers">
-  <img src="https://img.shields.io/badge/⭐%20Star%20Repo-پروژه%20را%20ستاره%20دهید-F59E0B?style=for-the-badge" alt="Stars" />
-</a>
+<a href="./README.md"><img src="https://img.shields.io/badge/English-Docs-2563EB?style=for-the-badge" alt="English Documentation" /></a>
+<a href="https://github.com/imgutss/pol-cloudflare-bridge/stargazers"><img src="https://img.shields.io/badge/⭐%20Star-Support%20Project-F59E0B?style=for-the-badge" alt="Stars" /></a>
 
 <br/><br/>
-
-<img src="https://img.shields.io/badge/اندروید-8.0%20تا%2015-3DDC84?style=flat-square&logo=android&logoColor=white" />
-<img src="https://img.shields.io/badge/کلودفلر-Workers%20Edge-F38020?style=flat-square&logo=cloudflare&logoColor=white" />
-<img src="https://img.shields.io/badge/پروتکل-TLS%20over%20WebSocket-0EA5E9?style=flat-square&logo=websocket&logoColor=white" />
-<img src="https://img.shields.io/badge/خروجی-آی‌پی%20تمیز%20آمریکا-8B5CF6?style=flat-square" />
-<img src="https://img.shields.io/badge/امنیت-Zero%20Knowledge%20E2EE-10B981?style=flat-square" />
-<img src="https://img.shields.io/badge/مقصد-Meta%20Muse%20(muse.ai)-0081FB?style=flat-square&logo=meta&logoColor=white" />
+<img src="https://img.shields.io/badge/Android-8%2B-3DDC84?style=flat-square&logo=android&logoColor=white" />
+<img src="https://img.shields.io/badge/Cloudflare-Workers-F38020?style=flat-square&logo=cloudflare&logoColor=white" />
+<img src="https://img.shields.io/badge/Offline-ARM64%20CPU-8B5CF6?style=flat-square" />
 
 </div>
 
@@ -33,132 +25,40 @@
 
 ## 🌟 معرفی
 
-**پل کلودفلر (Pol Cloudflare Bridge)** یک راهکار اختصاصی و امن برای عبور از تحریم‌های منطقه‌ای و اتصال مستقیم به سرویس هوش مصنوعی **[Meta Muse](https://muse.ai/)** بدون نیاز به فیلترشکن‌های عمومی است.
+پل کلودفلر یک اپ اندرویدی با مرورگر داخلی، اتصال به سرویس‌های هوش مصنوعی و امکان گفت‌وگوی متنی با مدل‌های آفلاین است. مسیر مرورگر داخلی از طریق پروکسی محلی و ورکر کلودفلر برقرار می‌شود؛ آدرس ورکر و کلید پل قابل تنظیم هستند.
 
-<table width="100%">
-  <thead>
-    <tr>
-      <th align="right" width="30%">ویژگی</th>
-      <th align="right" width="70%">توضیحات</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td align="right"><b>🇺🇸 خروجی خالص آمریکا</b></td>
-      <td align="right">خروجی مستقیم از دیتاسنترهای ویرجینیا و اورگان جهت دور زدن قطعی تحریم‌های هوش مصنوعی متا.</td>
-    </tr>
-    <tr>
-      <td align="right"><b>🔒 رمزنگاری انتها‌به‌انتها</b></td>
-      <td align="right">انتقال دست‌نخوردهٔ TLS 1.3 (کلودفلر فقط حامل بایت‌هاست و به محتوا دسترسی ندارد).</td>
-    </tr>
-    <tr>
-      <td align="right"><b>⚡ بدون افت سرعت گوشی</b></td>
-      <td align="right">تونل فقط برای مرورگر داخلی فعال است و ترافیک کلی گوشی و باتری را درگیر نمی‌کند.</td>
-    </tr>
-    <tr>
-      <td align="right"><b>🎨 رابط کاربری سه‌بعدی</b></td>
-      <td align="right">طراحی ایزومتریک با شتاب‌دهندهٔ سخت‌افزاری و تم تاریک بدون لرزش در اسکرول لمسی.</td>
-    </tr>
-    <tr>
-      <td align="right"><b>🤖 دستیار هوشمند ورود</b></td>
-      <td align="right">شناسایی خودکار فرم ورود Muse و تکمیل ایمیل کاربر بدون ذخیره رمز.</td>
-    </tr>
-  </tbody>
-</table>
-
----
-
-## 🏗️ معماری شبکه
-
-```mermaid
-graph TD
-    Client["📱 کلاینت اندروید (Pol Bridge)"] --> UI["🎨 داشبورد سه‌بعدی ایزومتریک"]
-    Client --> WebView["🌐 مرورگر ایزوله داخلی (Secure WebView)"]
-    
-    WebView -->|"HTTP CONNECT"| Proxy["🔒 هسته پروکسی محلی (127.0.0.1)"]
-    
-    Proxy -->|"WSS Tunnel + Token<br/>رمزنگاری سرتاسری TLS"| Worker["☁️ ورکر لبه کلودفلر (Cloudflare Worker)"]
-    
-    Worker -->|"cloudflare:sockets"| US_East["🇺🇸 خروجی شرق آمریکا (Virginia)"]
-    Worker -->|"cloudflare:sockets"| US_West["🇺🇸 خروجی غرب آمریکا (Oregon)"]
-    
-    US_East -->|"Direct TCP 443"| Target["🤖 سرور هوش مصنوعی Meta Muse<br/>https://muse.ai/"]
-    US_West -->|"Direct TCP 443"| Target
-
-    classDef c1 fill:#1e293b,stroke:#0ea5e9,stroke-width:2px,color:#f8fafc;
-    classDef c2 fill:#312e81,stroke:#818cf8,stroke-width:2px,color:#f8fafc;
-    classDef c3 fill:#431407,stroke:#f97316,stroke-width:2px,color:#f8fafc;
-    classDef c4 fill:#064e3b,stroke:#10b981,stroke-width:2px,color:#f8fafc;
-
-    class Client,UI,WebView c1;
-    class Proxy,Worker c2;
-    class US_East,US_West c3;
-    class Target c4;
-```
-
----
+| قابلیت | توضیح |
+| :--- | :--- |
+| 🌐 **مرورگر داخلی** | باز کردن سرویس‌هایی مانند Gemini و Muse از داخل برنامه. |
+| 🔧 **تنظیم دستی API** | ورود دستی آدرس، نام مدل و کلید API؛ انتخاب خودکار مدل انجام نمی‌شود. |
+| 🤖 **مدل آفلاین متنی** | دریافت و اجرای مدل سازگار روی CPU دستگاه؛ مدل‌ها جداگانه دانلود می‌شوند. |
+| 💬 **پاسخ تدریجی** | نمایش مرحله‌ای پاسخ آفلاین، نگه‌داشتن مدل بارگذاری‌شده بین پیام‌ها و نمایش Markdown. |
+| 🗂️ **مدیریت مدل‌ها** | کارت‌های افقی و گزینهٔ حذف مدل آفلاین. |
+| ⌨️ **کیبورد Gemini** | اصلاح مدیریت فضای کیبورد در مرورگر داخلی. |
 
 ## 🚀 دانلود و نصب
 
-| نسخه | حجم | پیش‌نیاز | لینک دانلود |
+| نسخه | حجم APK | پیش‌نیاز | دانلود |
 | :---: | :---: | :---: | :---: |
-| **v1.0.0 (رسمی)** | ۱.۴ مگابایت | اندروید ۸ تا ۱۵ | [📥 **دانلود مستقیم فایل APK**](https://github.com/imgutss/pol-cloudflare-bridge/releases/download/v1.0.0/Pol-Cloudflare-Bridge.apk) |
+| **v1.0.1** | حدود ۱۶۸ مگابایت | اندروید ۸ یا بالاتر؛ مدل آفلاین به ARM64 نیاز دارد | [📥 دانلود مستقیم APK](https://github.com/imgutss/pol-cloudflare-bridge/releases/download/v1.0.1/Pol-Cloudflare-Bridge.apk) |
 
-> 📦 جهت مشاهده گزارش تغییرات یا بیلدهای گذشته می‌توانید به [صفحه Releases در گیت‌هاب](https://github.com/imgutss/pol-cloudflare-bridge/releases) مراجعه فرمایید.
+مدل‌های آفلاین داخل APK نیستند و به فضای ذخیره‌سازی و حافظهٔ کافی نیاز دارند. قبل از نصب، از داده‌های مهم پشتیبان بگیرید. اگر نسخهٔ قبلی با امضای متفاوت نصب شده باشد، اندروید ممکن است به‌روزرسانی مستقیم را نپذیرد؛ حذف برنامه می‌تواند داده‌های آن را پاک کند.
 
----
+## ☁️ تنظیم اتصال
 
-## 🛠️ راه‌اندازی ورکر شخصی (اختیاری)
+ورکر را با راهنمای پوشهٔ [`worker/`](./worker/) روی حساب Cloudflare خود مستقر کنید و آدرس و کلید آن را در تنظیمات برنامه وارد کنید. برای سرویس سفارشی، نشانی API، نام مدل و کلید همان سرویس را به‌صورت دستی وارد کنید.
 
-سورس ورکر در پوشهٔ `worker/` قرار دارد و به‌راحتی روی اکانت رایگان کلودفلر شما مستقر می‌شود:
+> کشور یا IP خروجی Cloudflare ثابت و تضمین‌شده نیست و دسترسی به هر سرویس به شرایط آن سرویس و شبکه بستگی دارد. همهٔ مسیرهای برنامه یا تمام ارائه‌دهندگان برای عبور از تونل به‌صورت جامع تأیید نشده‌اند؛ برای adapter سفارشی، در نبود پل اتصال مستقیم جایگزین نمی‌شود.
 
-```bash
-cd worker
-npm install
-npx wrangler secret put BRIDGE_TOKEN   # کلید امنیتی دلخواه خود را وارد کنید
-npx wrangler deploy
-```
+## ℹ️ محدودیت‌های نسخه
 
-سپس آدرس ورکر خود (`https://your-worker.workers.dev`) و کلید تنظیم‌شده را در بخش تنظیمات دستی اپلیکیشن وارد کنید.
+- در این انتشار پردازش تصویر و دوربین آفلاین و شتاب‌دهی GPU وجود ندارد؛ گفت‌وگوی آفلاین متنی از CPU استفاده می‌کند.
+- سازگاری، سرعت و مصرف حافظه به مدل و دستگاه بستگی دارد. کیبورد Gemini توسط کاربر روی دستگاه آزمایش شده، اما همهٔ دستگاه‌ها و نسخه‌های WebView آزمایش نشده‌اند.
+- محتوای مخزن شامل کد و منابع نسخه‌های قبلی و قطعات تغییرات این نسخه است؛ **سورس کامل و فرایند بازتولید مستقل APK منتشرشده فعلاً در مخزن موجود نیست**.
 
----
-
-## ❓ پرسش‌های متداول
-
-<details>
-<summary><b>آیا ورکر کلودفلر اطلاعات یا رمز عبور من را می‌بیند؟</b></summary>
-<br/>
-<b>خیر، به هیچ وجه.</b> ترافیک دارای رمزنگاری کامل انتها‌به‌انتها (E2EE) بر بستر TLS است. کلیدهای رمزگشایی فقط درون مرورگر گوشی شما و سرور اصلی متا قرار دارند.
-</details>
-
-<details>
-<summary><b>دلیل خطای ۴۰۱ قبلی چه بود؟</b></summary>
-<br/>
-متا اخیراً اندپوینت منسوخ‌شدهٔ <code>/access</code> را خصوصی کرده بود. در این نسخهٔ نهایی، آدرس مقصد به آدرس عمومی و پایدار <code>https://muse.ai/</code> تغییر یافته و پاسخ HTTP 200 دریافت می‌کند.
-</details>
-
-<details>
-<summary><b>آیا استفاده از برنامه هزینه‌ای دارد؟</b></summary>
-<br/>
-<b>خیر، ۱۰۰٪ رایگان.</b> پلان استاندارد کلودفلر روزانه ۱۰۰ هزار درخواست رایگان ارائه می‌دهد که برای استفاده‌های شخصی کاملاً کافی است.
-</details>
+📋 [تاریخچه تغییرات](./CHANGELOG.md) · 📦 [همهٔ انتشارها](https://github.com/imgutss/pol-cloudflare-bridge/releases) · 🔒 [امنیت](./SECURITY.md)
 
 </div>
 
 ---
-
-<div align="center">
-
-**توسعه‌داده‌شده توسط [Guts (imgutss)](https://github.com/imgutss)** • *مجوز متن‌باز MIT*
-
-<br/>
-
-[راهنمای مشارکت](./CONTRIBUTING.md) • [خط‌مشی امنیت](./SECURITY.md) • [تاریخچه تغییرات](./CHANGELOG.md) • [مرام‌نامه اخلاقی](./CODE_OF_CONDUCT.md)
-
-<br/><br/>
-
-<a href="https://github.com/imgutss/pol-cloudflare-bridge">
-  <img src="https://img.shields.io/badge/GitHub-pol--cloudflare--bridge-181717?style=for-the-badge&logo=github&logoColor=white" />
-</a>
-
-</div>
+<div align="center"><b>توسعه‌داده‌شده توسط <a href="https://github.com/imgutss">Guts (imgutss)</a></b></div>
