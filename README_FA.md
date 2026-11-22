@@ -10,7 +10,7 @@
 
 <br/>
 
-<a href="https://github.com/imgutss/pol-cloudflare-bridge/releases/download/v1.0.1/Pol-Cloudflare-Bridge.apk"><img src="https://img.shields.io/badge/⬇_دانلود_APK-v1.0.1-8B5CF6?style=for-the-badge&logo=android&logoColor=white" alt="دانلود نسخه 1.0.1" /></a>
+<a href="https://github.com/imgutss/pol-cloudflare-bridge/releases/download/1.0.2/Pol-Cloudflare-Bridge-1.0.2.apk"><img src="https://img.shields.io/badge/⬇_دانلود_APK-1.0.2-8B5CF6?style=for-the-badge&logo=android&logoColor=white" alt="دانلود نسخه 1.0.2" /></a>
 <a href="./README.md"><img src="https://img.shields.io/badge/English-Documentation-06B6D4?style=for-the-badge" alt="English documentation" /></a>
 <a href="https://github.com/imgutss/pol-cloudflare-bridge/stargazers"><img src="https://img.shields.io/badge/⭐_Star-حمایت_از_پروژه-F59E0B?style=for-the-badge" alt="ستاره دادن به پروژه" /></a>
 
@@ -52,6 +52,10 @@
 | انتخاب مدل کنار کادر گفت‌وگو | مسیر API سفارشی OpenAI-compatible |
 | رابط فارسی / English در محیط | اتصال به پل موجود برای این مسیر |
 | ابزارهای موجود وابسته به حساب و سرویس | بعد از تغییر تنظیمات، یک گفت‌وگوی جدید بساز |
+
+> **هشدار امنیتی انتشار 1.0.2:** این APK حاوی رمز دسترسی پل است که قابل استخراج است؛ آن را افشاشده در نظر بگیر. گردانندهٔ پل می‌تواند کلید API و محتوای درخواست را ببیند. فقط با کلید کم‌اعتبار و بدون دادهٔ محرمانه استفاده کن.
+>
+> سازگاری همهٔ سرویس‌ها تضمین نیست: مدل صرفاً تصویری Qwen به‌عنوان مدل چت پشتیبانی نمی‌شود و خطای اعتبار Fable ممکن است باقی بماند. دانلود مصنوع آزمایشی و برای مسیر blob/data محدود به ۳۲ مگابایت است. نام نسخهٔ داخلی APK همچنان `1.0.1` است (version code برابر ۳۸).
 
 **مهم:** اتصال مدل سفارشی آزمایشی و برای یک مدل متنی است و به معنی سازگاری همهٔ ارائه‌دهندگان یا همهٔ مدل‌ها نیست. ابزارها، تصویر، صدا و فراخوانی ابزار با هر API تضمین نشده‌اند. هنگام استفاده از فایل یا ترمینال، فقط مجوزهای مورد اعتماد را تأیید کن. ورود و بعضی مسیرهای بومی ممکن است رفتار شبکهٔ متفاوتی داشته باشند.
 
@@ -129,7 +133,7 @@ Pol
 
 بدون نیاز به اینترنت در زمان گفت‌وگو، پس از دانلود مدل سازگار:
 
-| قابلیت | تجربه در v1.0.1 |
+| قابلیت | تجربه در 1.0.2 |
 | :--- | :--- |
 | 📦 **مدل‌ها** | دانلود جداگانه، کارت‌های افقی و امکان حذف مدل |
 | 💬 **پاسخ زنده** | نمایش تدریجی متن به جای انتظار برای پاسخ کامل |
@@ -156,7 +160,7 @@ Pol
 
 ## 🚀 شروع سریع
 
-**۱. نصب** — [APK نسخهٔ 1.0.1](https://github.com/imgutss/pol-cloudflare-bridge/releases/download/v1.0.1/Pol-Cloudflare-Bridge.apk) را دانلود و نصب کن.
+**۱. نصب** — [APK نسخهٔ 1.0.2](https://github.com/imgutss/pol-cloudflare-bridge/releases/download/1.0.2/Pol-Cloudflare-Bridge-1.0.2.apk) را دانلود و نصب کن.
 
 **۲. انتخاب مسیر** — برای Antigravity کارت آن را باز کن؛ برای گفت‌وگوی محلی به بخش آفلاین برو و مدل مورد نظرت را دانلود کن.
 
@@ -170,14 +174,15 @@ Pol
 
 | نسخه | حجم | پیش‌نیاز | دریافت |
 | :---: | :---: | :---: | :---: |
-| **v1.0.1** | حدود **۱۶۸ مگابایت** | Android 8+؛ آفلاین: ARM64 و حافظهٔ کافی | [⬇️ دانلود APK](https://github.com/imgutss/pol-cloudflare-bridge/releases/download/v1.0.1/Pol-Cloudflare-Bridge.apk) |
+| **1.0.2** | حدود **۱۶۸ مگابایت** | Android 8+؛ آفلاین: ARM64 و حافظهٔ کافی | [⬇️ دانلود APK](https://github.com/imgutss/pol-cloudflare-bridge/releases/download/1.0.2/Pol-Cloudflare-Bridge-1.0.2.apk) |
 
 > پیش از نصب از داده‌های مهم پشتیبان بگیر. اگر نسخهٔ نصب‌شده امضای متفاوتی داشته باشد، نصب روی نسخهٔ قبلی ممکن است پذیرفته نشود؛ حذف برنامه می‌تواند داده‌های آن را پاک کند.
 
 <details>
 <summary><b>🔍 جزئیات فایل و وضعیت سورس</b></summary>
 
-- SHA-256: `4416f0fae025d471936bef2a639485040f1ce67d6ef5deb4cf294cfce36e86fe`
+- سقف خروجی موجود مدل سفارشی حداکثر ۸۱۹۲ توکن است و در نبود اطلاعات سرویس مقدار ۴۰۹۶ فرض می‌شود.
+- SHA-256: `989811fbe2600ada94eeb216f91d30696ddf6620f90da9c8456447d55a34ebd9`
 - کیبورد Gemini در یک دستگاه توسط کاربر تأیید شده؛ همهٔ دستگاه‌ها و نسخه‌های WebView آزمایش نشده‌اند.
 - مخزن شامل منابع نسخه‌های قبلی و [قطعات منتخب تغییرات](./android/patches/v1.0.1/) است؛ **سورس کامل و فرایند بازتولید مستقل APK فعلاً موجود نیست**.
 - اجزای همراه و مدل‌های جداگانه ممکن است شرایط مجوز خودشان را داشته باشند.

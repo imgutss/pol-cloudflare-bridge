@@ -10,7 +10,7 @@
 
 <br/>
 
-<a href="https://github.com/imgutss/pol-cloudflare-bridge/releases/download/v1.0.1/Pol-Cloudflare-Bridge.apk"><img src="https://img.shields.io/badge/⬇_DOWNLOAD_APK-v1.0.1-8B5CF6?style=for-the-badge&logo=android&logoColor=white" alt="Download v1.0.1 APK" /></a>
+<a href="https://github.com/imgutss/pol-cloudflare-bridge/releases/download/1.0.2/Pol-Cloudflare-Bridge-1.0.2.apk"><img src="https://img.shields.io/badge/⬇_DOWNLOAD_APK-1.0.2-8B5CF6?style=for-the-badge&logo=android&logoColor=white" alt="Download 1.0.2 APK" /></a>
 <a href="./README_FA.md"><img src="https://img.shields.io/badge/راهنمای_فارسی-Persian_Docs-06B6D4?style=for-the-badge" alt="Persian documentation" /></a>
 <a href="https://github.com/imgutss/pol-cloudflare-bridge/stargazers"><img src="https://img.shields.io/badge/⭐_STAR-SUPPORT_PROJECT-F59E0B?style=for-the-badge" alt="Star this repository" /></a>
 
@@ -52,6 +52,10 @@ Antigravity is more than a dashboard shortcut. Pol opens an **on-device environm
 | Choose a model next to the chat box | OpenAI-compatible custom API path |
 | Persian / English interface option | Uses the configured bridge for the custom path |
 | Available tools depend on the account and service | Start a new conversation after changing settings |
+
+> **Release 1.0.2 security notice:** This APK contains a bridge access credential that can be extracted. Treat the bridge credential as exposed; the bridge operator can see API keys and prompts. Use only a low-risk key and avoid confidential data.
+>
+> Compatibility is not universal: image-only Qwen models are not supported as chat models; Fable may still report insufficient quota. Artifact downloads are experimental, with a 32 MiB limit for the supported blob/data path. The APK internal version name remains `1.0.1` (version code 38).
 
 **Important:** custom API integration is experimental and configured for one text model; it does not imply support for every provider or model. Tool calls, images and audio are not guaranteed across APIs. Approve file and terminal permissions only when you trust the request. Login and some native paths may use different network behavior.
 
@@ -129,7 +133,7 @@ Pol
 
 After downloading a compatible model, text conversations can run without an internet connection:
 
-| Capability | v1.0.1 experience |
+| Capability | 1.0.2 experience |
 | :--- | :--- |
 | 📦 **Models** | Separate downloads, horizontal cards and a delete option |
 | 💬 **Live response** | Incremental text instead of waiting for the entire reply |
@@ -156,7 +160,7 @@ Access, account features, speed and regional restrictions depend on the service 
 
 ## 🚀 Quick start
 
-**1. Install** — Download and install the [v1.0.1 APK](https://github.com/imgutss/pol-cloudflare-bridge/releases/download/v1.0.1/Pol-Cloudflare-Bridge.apk).
+**1. Install** — Download and install the [1.0.2 APK](https://github.com/imgutss/pol-cloudflare-bridge/releases/download/1.0.2/Pol-Cloudflare-Bridge-1.0.2.apk).
 
 **2. Choose a path** — Open Antigravity from its card, or go to Offline AI and download a compatible model.
 
@@ -170,14 +174,15 @@ Access, account features, speed and regional restrictions depend on the service 
 
 | Version | Size | Requirements | Get it |
 | :---: | :---: | :---: | :---: |
-| **v1.0.1** | ~**168 MB** | Android 8+; offline: ARM64 and sufficient memory | [⬇️ Download APK](https://github.com/imgutss/pol-cloudflare-bridge/releases/download/v1.0.1/Pol-Cloudflare-Bridge.apk) |
+| **1.0.2** | ~**168 MB** | Android 8+; offline: ARM64 and sufficient memory | [⬇️ Download APK](https://github.com/imgutss/pol-cloudflare-bridge/releases/download/1.0.2/Pol-Cloudflare-Bridge-1.0.2.apk) |
 
 > Back up important data before installing. Android may reject an in-place update if the installed APK uses a different signing key; uninstalling can erase app data.
 
 <details>
 <summary><b>🔍 File details and source status</b></summary>
 
-- SHA-256: `4416f0fae025d471936bef2a639485040f1ce67d6ef5deb4cf294cfce36e86fe`
+- SHA-256: `989811fbe2600ada94eeb216f91d30696ddf6620f90da9c8456447d55a34ebd9`
+- Existing custom-model output cap is 8192 tokens, with a 4096 fallback if provider metadata is absent.
 - The Gemini keyboard was confirmed by a user on a device; not all devices and WebView versions have been tested.
 - The repository contains earlier sources and [selected patches](./android/patches/v1.0.1/); the **complete source and an independent reproducible APK build are not currently available**.
 - Bundled components and separately downloaded models may have their own license terms.

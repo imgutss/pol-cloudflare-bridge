@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.2 — experimental custom API improvements
+
+- Improve custom text-model tool-call and conversation translation; tested with mock servers and some user-reported real models.
+- Add a bounded Fable retry after the specific Relay reservation quota error; it can still fail or truncate output.
+- Add an experimental artifact blob/data download path (32 MiB limit); not validated on an Android device.
+- Public APK contains an extractable bridge credential; treat it as exposed. Image-only Qwen endpoints are not supported as a chat model. The APK internal version name remains 1.0.1, version code 38.
+
 All notable changes to **Pol Cloudflare Bridge** will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
